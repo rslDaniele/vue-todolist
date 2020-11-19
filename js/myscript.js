@@ -13,6 +13,7 @@ var app = new Vue({
       this.tasks.push({
 
       });
+      // input box clears 
       this.nuovaTask = '';
 
     }
