@@ -27,11 +27,12 @@
       <div id="appunti">
         <form @submit.prevent="aggiungiAzione" class="" action="index.html" method="post">
 
-          <label for="nuovaTask">Nuova attivià</label>
+          <label for="nuovaTask"> <b>Nuova attività</b> </label>
 
           <input v-model="nuovaTask" type="text" name="nuovaTask" id="nuovaTask" value="">
 
-          <button type="submit" name="button">Aggiungi attività</button>
+          <!-- Tasto che aggiunge attività -->
+          <button id="add" type="submit" name="button">Aggiungi attività</button>
 
         </form>
       </div>
@@ -39,7 +40,20 @@
       <!-- Contenitore lista a schermo -->
       <div id="lista">
         <ul>
-          <li v-for="azioni in tasks">{{azioni.text}}</li>
+
+          <li v-for="azione in tasks">
+
+            {{azione.appunto}}
+
+            <!-- Tasto che cancella attività -->
+            <button id="delete" v-on:click="rimuoviAzione(azione)" type="button" name="button">Cancella attività</button>
+
+            <hr>
+
+          </li>
+
+
+
         </ul>
       </div>
 

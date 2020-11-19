@@ -19,6 +19,8 @@
   height: 100px;
   /* background-color: lightgreen; */
   text-align: center;
+  padding: 10px;
+
 }
 
 #appunti{
@@ -27,10 +29,60 @@
   /* background-color: red; */
   margin-top: 20px;
   text-align: center;
+  padding: 10px;
+
+}
+
+#lista::after{
+  content:"";
+  clear: both;
+  display: table;
 }
 
 #lista{
-  height: 100px;
-  /* background-color: lime; */
   margin-top: 20px;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+h1{
+  font: 30px;
+  color: red;
+}
+
+#add{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: lightblue;
+  font-weight: bold;
+  margin: 10px;
+}
+
+input{
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+label{
+  font-size: 25px;
+  margin: 10px;
+}
+
+#delete{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: lightblue;
+  font-weight: bold;
+  margin: 10px;
+}
+
+ul{
+  list-style: inside;
+  font-size: 20px;
+  font-weight: bold;
+
 }

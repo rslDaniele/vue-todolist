@@ -9,13 +9,19 @@ var app = new Vue({
   },
 
   methods: {
+    // Function that adds task
     aggiungiAzione() {
       this.tasks.push({
-
-      });
-      // input box clears 
+        appunto: this.nuovaTask
+      }),
+      // input box clears
       this.nuovaTask = '';
+    },
 
+    // Function that deletes task
+    rimuoviAzione(azione) {
+      const azioneIndex = this.tasks.indexOf(azione);
+      this.tasks.splice(azioneIndex, 1);
     }
   }
 })
