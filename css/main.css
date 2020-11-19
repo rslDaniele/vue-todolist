@@ -17,18 +17,20 @@
 #logo{
   width: 50%;
   height: 100px;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  text-align: center;
 }
 
 #appunti{
   width: 50%;
   height: 75px;
-  background-color: red;
+  /* background-color: red; */
   margin-top: 20px;
+  text-align: center;
 }
 
 #lista{
   height: 100px;
-  background-color: lime;
+  /* background-color: lime; */
   margin-top: 20px;
 }
