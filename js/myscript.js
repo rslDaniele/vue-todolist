@@ -5,12 +5,12 @@ var app = new Vue({
   data: {
     titolo: "Lista cose da fare",
     nuovaTask: '',
-    task: []
+    tasks: []
   },
 
   methods: {
     aggiungiAzione() {
-      this.task.push({
+      this.tasks.push({
 
       });
       this.nuovaTask = '';
